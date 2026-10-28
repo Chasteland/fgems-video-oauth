@@ -41,34 +41,36 @@
   <p>Feel Good EMS. Contact : <a href="mailto:contact@feelgoodems.fr">contact@feelgoodems.fr</a>.</p>
 
   <h2>2. Données Google auxquelles l'outil accède</h2>
-  <p>L'outil utilise l'autorisation Google Drive complète (<code>drive</code>) du compte Google Drive de Feel Good EMS. Il peut ainsi accéder :</p>
+  <p>L'outil utilise l'autorisation Google Drive complète (<code>drive</code>) des comptes Google appartenant à Feel Good EMS et connectés à l'outil. Il peut ainsi accéder :</p>
   <ul>
-    <li>aux fichiers et dossiers du Google Drive de Feel Good EMS (vidéos, photos, documents) ;</li>
+    <li>aux fichiers et dossiers de ces Google Drive (vidéos, photos, documents, fichiers de projets de développement logiciel) ;</li>
     <li>à leurs métadonnées techniques (nom, taille, date, propriétaire, empreinte de contrôle) ;</li>
-    <li>à l'espace de stockage disponible du compte.</li>
+    <li>à l'espace de stockage disponible de chaque compte.</li>
   </ul>
-  <p>Il n'accède ni à la messagerie, ni aux contacts, ni à l'agenda. Il n'est utilisé qu'avec le compte Google de Feel Good EMS.</p>
+  <p>Cette autorisation complète est nécessaire techniquement, mais son utilisation reste limitée aux fichiers et dossiers nécessaires aux projets autorisés par Feel Good EMS. L'outil n'accède à aucun document sensible (par exemple factures, données de santé ou documents personnels) sans demande explicite du studio.</p>
+  <p>Il n'accède ni à la messagerie, ni aux contacts, ni à l'agenda. Il n'est utilisé qu'avec des comptes Google appartenant à Feel Good EMS. Chaque compte est connecté séparément, avec sa propre autorisation, révocable indépendamment.</p>
 
   <h2>3. Utilisation des données</h2>
   <p>Ces données servent exclusivement à :</p>
   <ul>
-    <li>transférer les fichiers du studio entre son Mac et son Google Drive ;</li>
+    <li>transférer les fichiers du studio entre les ordinateurs autorisés de Feel Good EMS et ses Google Drive ;</li>
     <li>vérifier l'intégrité des fichiers transférés ;</li>
-    <li>organiser l'archivage des fichiers du studio, notamment de ses vidéos.</li>
+    <li>organiser l'archivage des fichiers du studio, notamment de ses vidéos ;</li>
+    <li>stocker et organiser les fichiers des projets de développement logiciel de Feel Good EMS (documents, spécifications, maquettes, ressources). Le code source de ces logiciels est géré dans des dépôts de code privés.</li>
   </ul>
-  <p>L'outil ne supprime, ne déplace et n'écrase aucun fichier existant sans une validation explicite du studio.</p>
-  <p>Les traitements vidéo et audio (découpage, montage, transcription de la parole) sont réalisés localement, sur le Mac du studio, avec des logiciels installés sur ce Mac. Les fichiers vidéo et audio complets ne sont pas envoyés à un service en ligne pour ces traitements.</p>
+  <p>L'outil ne supprime, ne déplace et n'écrase aucun fichier existant sans une validation explicite du studio. Il ne copie aucun fichier d'un compte Google à un autre sans cette même validation.</p>
+  <p>Les traitements vidéo et audio (découpage, montage, transcription de la parole) sont réalisés localement, sur les ordinateurs autorisés de Feel Good EMS, avec des logiciels installés sur ces ordinateurs. Les fichiers vidéo et audio complets ne sont pas envoyés à un service en ligne pour ces traitements.</p>
 
   <h2>4. Assistant d'intelligence artificielle</h2>
-  <p>L'automatisation est pilotée par un assistant d'intelligence artificielle, Claude Code, fourni par Anthropic, qui fonctionne sur le Mac du studio et communique avec les serveurs d'Anthropic. Pour exécuter les tâches demandées par le studio, l'assistant peut recevoir et traiter toute information qu'il lit ou affiche au cours de ces tâches, notamment :</p>
+  <p>L'automatisation est pilotée par un assistant d'intelligence artificielle, Claude Code, fourni par Anthropic, qui fonctionne sur les ordinateurs autorisés de Feel Good EMS et communique avec les serveurs d'Anthropic. Pour exécuter les tâches demandées par le studio, l'assistant peut recevoir et traiter toute information qu'il lit ou affiche au cours de ces tâches, notamment :</p>
   <ul>
-    <li>les noms, chemins et organisation des fichiers et dossiers du Drive et du Mac ;</li>
+    <li>les noms, chemins et organisation des fichiers et dossiers du Drive et de l'ordinateur utilisé ;</li>
     <li>les métadonnées des fichiers (taille, dates, type, propriétaire, empreintes de contrôle) ;</li>
-    <li>le contenu des fichiers texte et des documents qu'il ouvre pour une tâche (par exemple transcriptions, scripts, journaux techniques, documents de travail) ;</li>
+    <li>le contenu des fichiers texte et des documents qu'il ouvre pour une tâche (par exemple transcriptions, scripts, code source, spécifications, journaux techniques, documents de travail) ;</li>
     <li>des images, captures d'écran ou images extraites de vidéos, lorsqu'une tâche nécessite de les examiner ;</li>
     <li>les résultats des commandes qu'il exécute et les échanges avec le studio.</li>
   </ul>
-  <p>Ces informations peuvent concerner des personnes apparaissant dans les fichiers du studio (par exemple les clients filmés lors d'un témoignage). Feel Good EMS utilise Claude Code dans le cadre d'un abonnement professionnel (Claude Team), soumis aux <a href="https://www.anthropic.com/legal/commercial-terms" rel="noopener">conditions commerciales d'Anthropic</a>. Dans ce cadre, Anthropic n'utilise pas les données transmises pour entraîner ses modèles, et Feel Good EMS ne participe à aucun programme de partage de données à cette fin. Ces données sont conservées par Anthropic pendant une durée limitée (30 jours selon sa documentation), conformément à sa <a href="https://www.anthropic.com/legal/privacy" rel="noopener">politique de confidentialité</a>.</p>
+  <p>Ces informations peuvent concerner des personnes apparaissant dans les fichiers du studio (par exemple les clients filmés lors d'un témoignage, ou des personnes mentionnées dans des documents de travail). Feel Good EMS utilise Claude Code dans le cadre d'un abonnement professionnel (Claude Team), soumis aux <a href="https://www.anthropic.com/legal/commercial-terms" rel="noopener">conditions commerciales d'Anthropic</a>. Dans ce cadre, Anthropic n'utilise pas les données transmises pour entraîner ses modèles, et Feel Good EMS ne participe à aucun programme de partage de données à cette fin. Ces données sont conservées par Anthropic pendant une durée limitée (30 jours selon sa documentation), conformément à sa <a href="https://www.anthropic.com/legal/privacy" rel="noopener">politique de confidentialité</a>.</p>
 
   <h2>5. Partage</h2>
   <p>Les données ne sont ni vendues, ni louées, ni utilisées à des fins publicitaires. Elles ne sont partagées avec aucun tiers, hormis Anthropic dans le cadre décrit ci-dessus et dans la stricte mesure nécessaire au fonctionnement de l'outil. Elles ne sont pas utilisées pour développer, améliorer ou entraîner des modèles d'intelligence artificielle généralistes. L'outil ne crée aucun lien de partage public.</p>
@@ -81,16 +83,16 @@
 
   <h2>6. Stockage et sécurité</h2>
   <ul>
-    <li>Les fichiers restent dans le Google Drive de Feel Good EMS et sur le Mac du studio.</li>
-    <li>L'autorisation d'accès Google est conservée chiffrée sur le Mac du studio ; elle n'est stockée sur aucun serveur tiers.</li>
+    <li>Les fichiers restent dans les Google Drive de Feel Good EMS et sur les ordinateurs autorisés de Feel Good EMS.</li>
+    <li>Les autorisations d'accès Google sont conservées chiffrées sur les ordinateurs autorisés de Feel Good EMS ; elles ne sont stockées sur aucun serveur tiers.</li>
     <li>Ces pages web ne déposent aucun cookie et n'utilisent aucun outil de mesure d'audience.</li>
   </ul>
 
   <h2>7. Conservation et suppression</h2>
-  <p>Les fichiers restent dans le Google Drive de Feel Good EMS tant que le studio ne les supprime pas. L'accès de l'outil peut être retiré à tout moment depuis <a href="https://myaccount.google.com/connections" rel="noopener">la page des applications connectées du compte Google</a>.</p>
+  <p>Les fichiers restent dans les Google Drive de Feel Good EMS tant que le studio ne les supprime pas. L'accès de l'outil peut être retiré à tout moment, pour chaque compte, depuis <a href="https://myaccount.google.com/connections" rel="noopener">la page des applications connectées du compte Google</a>.</p>
 
   <h2>8. Vos droits</h2>
-  <p>Toute personne apparaissant dans une vidéo ou une photo du studio peut demander l'accès à ses données, leur rectification ou leur suppression en écrivant à <a href="mailto:contact@feelgoodems.fr">contact@feelgoodems.fr</a>.</p>
+  <p>Toute personne apparaissant dans une vidéo, une photo ou un document du studio peut demander l'accès à ses données, leur rectification ou leur suppression en écrivant à <a href="mailto:contact@feelgoodems.fr">contact@feelgoodems.fr</a>.</p>
 
   <p><a href="index.html">← Retour à la présentation de l'outil</a></p>
 
